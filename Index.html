@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+  <div class="container">
+    <h1>🎉 Happy Birthday, Kichu! 🎉</h1>
+    <p> I love you and i miss you sooo much❤️</p>
+
+    <!-- Surprise Button -->
+    <button id="surpriseBtn">Click for a Surprise 🎁</button>
+
+    <!-- Hidden Surprise Text -->
+    <p id="surpriseText" class="hidden">Hehe!wait until we meet 😘</p>
+
+  </div>
+
+  <script>
+    // Show hidden text when button is clicked
+    const btn = document.getElementById('surpriseBtn');
+    const text = document.getElementById('surpriseText');
+
+    btn.addEventListener('click', () => {
+      text.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
